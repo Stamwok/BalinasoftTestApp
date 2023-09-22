@@ -9,21 +9,41 @@
 /* Begin PBXBuildFile section */
 		04586CDC2ABDFBAB004667FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04586CDB2ABDFBAB004667FB /* AppDelegate.swift */; };
 		04586CDE2ABDFBAB004667FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04586CDD2ABDFBAB004667FB /* SceneDelegate.swift */; };
-		04586CE02ABDFBAB004667FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04586CDF2ABDFBAB004667FB /* ViewController.swift */; };
-		04586CE32ABDFBAB004667FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04586CE12ABDFBAB004667FB /* Main.storyboard */; };
+		04586CE02ABDFBAB004667FB /* PhotosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04586CDF2ABDFBAB004667FB /* PhotosListViewController.swift */; };
 		04586CE52ABDFBAD004667FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04586CE42ABDFBAD004667FB /* Assets.xcassets */; };
 		04586CE82ABDFBAD004667FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04586CE62ABDFBAD004667FB /* LaunchScreen.storyboard */; };
+		04586CF12ABDFD48004667FB /* PhotosListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04586CF02ABDFD48004667FB /* PhotosListViewModel.swift */; };
+		04586CF42ABDFF22004667FB /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04586CF32ABDFF22004667FB /* WebClient.swift */; };
+		04586CF72ABE0218004667FB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 04586CF62ABE0218004667FB /* Kingfisher */; };
+		04586CFA2ABE0236004667FB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 04586CF92ABE0236004667FB /* Alamofire */; };
+		04586CFC2ABE03E3004667FB /* BaseServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04586CFB2ABE03E3004667FB /* BaseServiceError.swift */; };
+		04586CFF2ABE06D1004667FB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04586CFE2ABE06D1004667FB /* Service.swift */; };
+		04586D022ABE0761004667FB /* PhotoTypesListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04586D012ABE0761004667FB /* PhotoTypesListResponse.swift */; };
+		04586D052ABE07D3004667FB /* PhotoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04586D042ABE07D3004667FB /* PhotoDTO.swift */; };
+		04586D082ABE0813004667FB /* PostPhotoInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04586D072ABE0813004667FB /* PostPhotoInput.swift */; };
+		04586D0A2ABE08FE004667FB /* PostPhotoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04586D092ABE08FE004667FB /* PostPhotoResponse.swift */; };
+		04586D0C2ABE093E004667FB /* ServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04586D0B2ABE093E004667FB /* ServiceImpl.swift */; };
+		04586D0E2ABE0C9D004667FB /* DictionaryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04586D0D2ABE0C9D004667FB /* DictionaryEncoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04586CD82ABDFBAB004667FB /* BalinasoftTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalinasoftTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04586CDB2ABDFBAB004667FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04586CDD2ABDFBAB004667FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04586CDF2ABDFBAB004667FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04586CE22ABDFBAB004667FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04586CDF2ABDFBAB004667FB /* PhotosListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListViewController.swift; sourceTree = "<group>"; };
 		04586CE42ABDFBAD004667FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04586CE72ABDFBAD004667FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04586CE92ABDFBAD004667FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04586CF02ABDFD48004667FB /* PhotosListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListViewModel.swift; sourceTree = "<group>"; };
+		04586CF32ABDFF22004667FB /* WebClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebClient.swift; sourceTree = "<group>"; };
+		04586CFB2ABE03E3004667FB /* BaseServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceError.swift; sourceTree = "<group>"; };
+		04586CFE2ABE06D1004667FB /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		04586D012ABE0761004667FB /* PhotoTypesListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTypesListResponse.swift; sourceTree = "<group>"; };
+		04586D042ABE07D3004667FB /* PhotoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDTO.swift; sourceTree = "<group>"; };
+		04586D072ABE0813004667FB /* PostPhotoInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPhotoInput.swift; sourceTree = "<group>"; };
+		04586D092ABE08FE004667FB /* PostPhotoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPhotoResponse.swift; sourceTree = "<group>"; };
+		04586D0B2ABE093E004667FB /* ServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceImpl.swift; sourceTree = "<group>"; };
+		04586D0D2ABE0C9D004667FB /* DictionaryEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryEncoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04586CF72ABE0218004667FB /* Kingfisher in Frameworks */,
+				04586CFA2ABE0236004667FB /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +78,72 @@
 		04586CDA2ABDFBAB004667FB /* BalinasoftTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				04586CFD2ABE06B8004667FB /* Service */,
+				04586CF22ABDFF04004667FB /* WebClient */,
+				04586CEF2ABDFD27004667FB /* PhotosList */,
 				04586CDB2ABDFBAB004667FB /* AppDelegate.swift */,
 				04586CDD2ABDFBAB004667FB /* SceneDelegate.swift */,
-				04586CDF2ABDFBAB004667FB /* ViewController.swift */,
-				04586CE12ABDFBAB004667FB /* Main.storyboard */,
 				04586CE42ABDFBAD004667FB /* Assets.xcassets */,
 				04586CE62ABDFBAD004667FB /* LaunchScreen.storyboard */,
 				04586CE92ABDFBAD004667FB /* Info.plist */,
 			);
 			path = BalinasoftTestApp;
+			sourceTree = "<group>";
+		};
+		04586CEF2ABDFD27004667FB /* PhotosList */ = {
+			isa = PBXGroup;
+			children = (
+				04586CDF2ABDFBAB004667FB /* PhotosListViewController.swift */,
+				04586CF02ABDFD48004667FB /* PhotosListViewModel.swift */,
+			);
+			path = PhotosList;
+			sourceTree = "<group>";
+		};
+		04586CF22ABDFF04004667FB /* WebClient */ = {
+			isa = PBXGroup;
+			children = (
+				04586CF32ABDFF22004667FB /* WebClient.swift */,
+				04586CFB2ABE03E3004667FB /* BaseServiceError.swift */,
+				04586D0D2ABE0C9D004667FB /* DictionaryEncoder.swift */,
+			);
+			path = WebClient;
+			sourceTree = "<group>";
+		};
+		04586CFD2ABE06B8004667FB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				04586D062ABE0807004667FB /* Input */,
+				04586D032ABE07C9004667FB /* DTO */,
+				04586D002ABE074C004667FB /* Response */,
+				04586CFE2ABE06D1004667FB /* Service.swift */,
+				04586D0B2ABE093E004667FB /* ServiceImpl.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		04586D002ABE074C004667FB /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				04586D012ABE0761004667FB /* PhotoTypesListResponse.swift */,
+				04586D092ABE08FE004667FB /* PostPhotoResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		04586D032ABE07C9004667FB /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				04586D042ABE07D3004667FB /* PhotoDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		04586D062ABE0807004667FB /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				04586D072ABE0813004667FB /* PostPhotoInput.swift */,
+			);
+			path = Input;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +162,10 @@
 			dependencies = (
 			);
 			name = BalinasoftTestApp;
+			packageProductDependencies = (
+				04586CF62ABE0218004667FB /* Kingfisher */,
+				04586CF92ABE0236004667FB /* Alamofire */,
+			);
 			productName = BalinasoftTestApp;
 			productReference = 04586CD82ABDFBAB004667FB /* BalinasoftTestApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +194,10 @@
 				Base,
 			);
 			mainGroup = 04586CCF2ABDFBAB004667FB;
+			packageReferences = (
+				04586CF52ABE0218004667FB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				04586CF82ABE0236004667FB /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 04586CD92ABDFBAB004667FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +214,6 @@
 			files = (
 				04586CE82ABDFBAD004667FB /* LaunchScreen.storyboard in Resources */,
 				04586CE52ABDFBAD004667FB /* Assets.xcassets in Resources */,
-				04586CE32ABDFBAB004667FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +224,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04586CE02ABDFBAB004667FB /* ViewController.swift in Sources */,
+				04586CE02ABDFBAB004667FB /* PhotosListViewController.swift in Sources */,
+				04586D022ABE0761004667FB /* PhotoTypesListResponse.swift in Sources */,
+				04586D0A2ABE08FE004667FB /* PostPhotoResponse.swift in Sources */,
+				04586D0E2ABE0C9D004667FB /* DictionaryEncoder.swift in Sources */,
+				04586CFF2ABE06D1004667FB /* Service.swift in Sources */,
+				04586CFC2ABE03E3004667FB /* BaseServiceError.swift in Sources */,
+				04586CF12ABDFD48004667FB /* PhotosListViewModel.swift in Sources */,
+				04586D082ABE0813004667FB /* PostPhotoInput.swift in Sources */,
+				04586D0C2ABE093E004667FB /* ServiceImpl.swift in Sources */,
 				04586CDC2ABDFBAB004667FB /* AppDelegate.swift in Sources */,
+				04586D052ABE07D3004667FB /* PhotoDTO.swift in Sources */,
+				04586CF42ABDFF22004667FB /* WebClient.swift in Sources */,
 				04586CDE2ABDFBAB004667FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +243,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		04586CE12ABDFBAB004667FB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04586CE22ABDFBAB004667FB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04586CE62ABDFBAD004667FB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +385,7 @@
 				INFOPLIST_FILE = BalinasoftTestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +413,7 @@
 				INFOPLIST_FILE = BalinasoftTestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +451,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04586CF52ABE0218004667FB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.9.1;
+			};
+		};
+		04586CF82ABE0236004667FB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04586CF62ABE0218004667FB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04586CF52ABE0218004667FB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		04586CF92ABE0236004667FB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04586CF82ABE0236004667FB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04586CD02ABDFBAB004667FB /* Project object */;
 }
