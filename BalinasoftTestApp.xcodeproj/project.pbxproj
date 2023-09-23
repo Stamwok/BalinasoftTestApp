@@ -27,6 +27,7 @@
 		04586D132ABE2303004667FB /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04586D122ABE2303004667FB /* System.swift */; };
 		04586D172ABEC64C004667FB /* PhotosListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04586D162ABEC64C004667FB /* PhotosListTableViewCell.swift */; };
 		04586D192ABEC9ED004667FB /* PhotosListTableCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04586D182ABEC9ED004667FB /* PhotosListTableCellModel.swift */; };
+		04586D1C2ABF13C8004667FB /* UIImage+resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04586D1B2ABF13C8004667FB /* UIImage+resize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		04586D122ABE2303004667FB /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
 		04586D162ABEC64C004667FB /* PhotosListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListTableViewCell.swift; sourceTree = "<group>"; };
 		04586D182ABEC9ED004667FB /* PhotosListTableCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListTableCellModel.swift; sourceTree = "<group>"; };
+		04586D1B2ABF13C8004667FB /* UIImage+resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+resize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		04586CDA2ABDFBAB004667FB /* BalinasoftTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				04586D1A2ABF13B4004667FB /* Extension */,
 				04586D0F2ABE2279004667FB /* Feedback */,
 				04586CFD2ABE06B8004667FB /* Service */,
 				04586CF22ABDFF04004667FB /* WebClient */,
@@ -179,6 +182,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		04586D1A2ABF13B4004667FB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				04586D1B2ABF13C8004667FB /* UIImage+resize.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -258,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04586CE02ABDFBAB004667FB /* PhotosListViewController.swift in Sources */,
+				04586D1C2ABF13C8004667FB /* UIImage+resize.swift in Sources */,
 				04586D022ABE0761004667FB /* PhotoTypesListResponse.swift in Sources */,
 				04586D0A2ABE08FE004667FB /* PostPhotoResponse.swift in Sources */,
 				04586D172ABEC64C004667FB /* PhotosListTableViewCell.swift in Sources */,

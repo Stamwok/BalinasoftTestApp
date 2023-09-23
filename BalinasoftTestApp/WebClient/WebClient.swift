@@ -67,8 +67,6 @@ final class WebClient<T: Decodable> {
             } else {
                 throw BaseServiceError.decodableError
             }
-        }.mapError { error in
-            (error as? BaseServiceError) ?? BaseServiceError.decodableError
         }
         .eraseToAnyPublisher()
     }

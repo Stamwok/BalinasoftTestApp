@@ -93,6 +93,7 @@ class PhotosListViewController: UIViewController {
             showCamera()
         case .error(let error):
             loadingIndicatior.stopAnimating()
+            tableView.isUserInteractionEnabled = true
             showAlert(title: "Error", message: error)
         default:
             break

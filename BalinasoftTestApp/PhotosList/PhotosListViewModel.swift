@@ -66,7 +66,7 @@ extension PhotosListViewModel {
         case onLoaded(PhotoTypesListResponse)
         case onShowCamera(photoTypeId: Int)
         case onPhotoTaked(UIImage?)
-        case onPhotoSended(PostPhotoResponse)
+        case onPhotoSent(PostPhotoResponse)
         case onError(String)
     }
 }
@@ -98,17 +98,17 @@ extension PhotosListViewModel {
             return newState
         case (.showingCamera, .onPhotoTaked(let image)):
             var newState = state
-            if let imageData = image?.pngData() {
-                newState.postPhotoInput.photo = imageData 
+            if let imageData = image?.resizeToDataSize(1024 * 1024)?.pngData() {
+                newState.postPhotoInput.photo = imageData
                 newState.postPhotoInput.name = "Yahor Shuliak"
                 newState.currentState = .sendingPhoto(newState.postPhotoInput)
             } else {
                 newState.currentState = .loaded(items: newState.items, isLastPage: newState.isLastPage, message: nil)
             }
             return newState
-        case (.sendingPhoto, .onPhotoSended(let response)):
+        case (.sendingPhoto, .onPhotoSent(let response)):
             var newState = state
-            let message = response.id != nil ? "Photo sended" : nil
+            let message = response.id != nil ? "Photo sent" : nil
             newState.currentState = .loaded(items: newState.items, isLastPage: newState.isLastPage, message: message)
             return newState
         case (_, .onError(let error)):
@@ -128,7 +128,7 @@ extension PhotosListViewModel {
                     .eraseToAnyPublisher()
             case .sendingPhoto(let input):
                 return service.postPhoto(input: input)
-                    .map { Event.onPhotoSended($0) }
+                    .map { Event.onPhotoSent($0) }
                     .catch { Just(Event.onError($0.localizedDescription)) }
                     .eraseToAnyPublisher()
             default:
