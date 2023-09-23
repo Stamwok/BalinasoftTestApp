@@ -57,7 +57,7 @@ extension PhotosListViewModel {
         var items: [PhotosListTableCellModel] = []
         var currentPage = 0
         var isLastPage = false
-        var postPhotoInput: PostPhotoInput = PostPhotoInput(name: "", photo: Data(), typeId: -1)
+        var postPhotoInput: PostPhotoInput = PostPhotoInput(name: "Yahor Shuliak", photo: Data(), typeId: -1)
     }
     
     enum Event {
@@ -65,7 +65,7 @@ extension PhotosListViewModel {
         case onLoadMore
         case onLoaded(PhotoTypesListResponse)
         case onShowCamera(photoTypeId: Int)
-        case onPhotoTaked(UIImage?)
+        case onPhotoTaken(UIImage?)
         case onPhotoSent(PostPhotoResponse)
         case onError(String)
     }
@@ -96,11 +96,10 @@ extension PhotosListViewModel {
             newState.postPhotoInput.typeId = typeId
             newState.currentState = .showingCamera
             return newState
-        case (.showingCamera, .onPhotoTaked(let image)):
+        case (.showingCamera, .onPhotoTaken(let image)):
             var newState = state
             if let imageData = image?.resizeToDataSize(1024 * 1024)?.pngData() {
                 newState.postPhotoInput.photo = imageData
-                newState.postPhotoInput.name = "Yahor Shuliak"
                 newState.currentState = .sendingPhoto(newState.postPhotoInput)
             } else {
                 newState.currentState = .loaded(items: newState.items, isLastPage: newState.isLastPage, message: nil)

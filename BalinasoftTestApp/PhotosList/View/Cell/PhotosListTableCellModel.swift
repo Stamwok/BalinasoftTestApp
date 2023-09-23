@@ -35,6 +35,4 @@ extension PhotosListTableCellModel: Equatable {
         lhs.imageUrl == rhs.imageUrl &&
         lhs.title == rhs.title
     }
-    
-    
 }

@@ -171,7 +171,7 @@ extension PhotosListViewController: UIImagePickerControllerDelegate, UINavigatio
     
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return }
-        viewModel?.send(event: .onPhotoTaked(image))
+        viewModel?.send(event: .onPhotoTaken(image))
         self.dismiss(animated: true)
     }
 }
