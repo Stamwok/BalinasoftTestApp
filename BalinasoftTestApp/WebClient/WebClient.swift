@@ -38,4 +38,38 @@ final class WebClient<T: Decodable> {
                 }
             }.eraseToAnyPublisher()
     }
+    
+    func request(path: String, method: HTTPMethod = .post, headers: HTTPHeaders? = nil, multipartFormData: @escaping (MultipartFormData) -> Void) -> AnyPublisher<T, Error> {
+        AF.upload(
+            multipartFormData: multipartFormData,
+            to: URL(string: baseURL + path)!,
+            method: method,
+            headers: headers
+        )
+        .validate { (request, response, data) -> DataRequest.ValidationResult in
+            if let request = request,
+               let body = String(data: request.httpBody ?? Data(), encoding: .utf8) {
+                debugPrint("Request: \(request)")
+                debugPrint("Body: \(body)")
+                
+            }
+            debugPrint(response)
+            debugPrint(String(data: data ?? Data(), encoding: .utf8) ?? "")
+            return .success(())
+        }
+        .publishData()
+        .tryMap { output in
+            guard let httpResponse = output.response, httpResponse.statusCode == 200 else {
+                throw BaseServiceError.badRequest
+            }
+            if let result = output.data.flatMap({ try? JSONDecoder().decode(T.self, from: $0) }) {
+                return result
+            } else {
+                throw BaseServiceError.decodableError
+            }
+        }.mapError { error in
+            (error as? BaseServiceError) ?? BaseServiceError.decodableError
+        }
+        .eraseToAnyPublisher()
+    }
 }

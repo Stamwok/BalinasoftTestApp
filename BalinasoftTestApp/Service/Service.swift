@@ -10,5 +10,5 @@ import Combine
 
 protocol Service {
     func postPhoto(input: PostPhotoInput) -> AnyPublisher<PostPhotoResponse, Error>
-    func getPhotoTypesList() -> AnyPublisher<PhotoTypesListResponse, Error>
+    func getPhotoTypesList(page: Int) -> AnyPublisher<PhotoTypesListResponse, Error>
 }

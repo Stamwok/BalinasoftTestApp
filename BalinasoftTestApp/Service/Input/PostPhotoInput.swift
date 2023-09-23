@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PostPhotoInput: Encodable {
+struct PostPhotoInput: Equatable {
     
     var name: String
     var photo: Data
