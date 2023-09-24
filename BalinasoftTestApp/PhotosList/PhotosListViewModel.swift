@@ -111,7 +111,9 @@ extension PhotosListViewModel {
             newState.currentState = .loaded(items: newState.items, isLastPage: newState.isLastPage, message: message)
             return newState
         case (_, .onError(let error)):
-            return State(currentState: .error(error))
+            var newState = state
+            newState.currentState = .error(error)
+            return newState
         default:
             return state
         }

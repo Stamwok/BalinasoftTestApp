@@ -66,7 +66,8 @@ class PhotosListViewController: UIViewController {
     // MARK: - Private methods
     
     private func bind(viewModel: PhotosListViewModel) {
-        viewModel.$state
+        viewModel
+            .$state
             .sink { [weak self] state in
                 self?.render(state: state)
             }.store(in: &bag)
